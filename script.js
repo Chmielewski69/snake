@@ -19,7 +19,7 @@ var intervalBottom;
 var intervalLeft;
 var intervalTop;
 var direction = "right";
-var maxSpeed = 100;
+var maxSpeed = 800;
 var speedElement = document.getElementById('speed');
 speedElement.innerHTML = speed;
     Snake = {
