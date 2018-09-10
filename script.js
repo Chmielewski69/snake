@@ -1,4 +1,4 @@
-//hammer.js
+//hammer.js  
 (function snakeGame() {
 var i=0;
 var scoreElement = document.getElementById('score');
