@@ -13,13 +13,13 @@ var hh2 = hh -50;
 var audio = document.getElementById('blop');
 var food = document.getElementById('c');
 var snake = document.getElementById('b');
-var speed = 100;
+var speed = 700;
 var intervalRight;
 var intervalBottom;
 var intervalLeft;
 var intervalTop;
 var direction = "right";
-var maxSpeed = 800;
+var maxSpeed = 100;
 var speedElement = document.getElementById('speed');
 speedElement.innerHTML = speed;
     Snake = {
@@ -116,7 +116,7 @@ speedElement.innerHTML = speed;
 			clearInterval(intervalRight);
 			clearInterval(intervalBottom);
 			direction = "right";
-			speed = 100;
+			speed = 700;
 			i=0;
 			document.getElementById('score').innerHTML=0;
 			
@@ -128,7 +128,7 @@ speedElement.innerHTML = speed;
 			snake.setAttribute('data-x', 50);
 			snake.style.top = 0 + "px";
 			snake.style.left = 50 + "px";
-			scoreElement.innerHTML = speed;
+			speedElement.innerHTML = speed;
 			this._directions.moveRight();
 		},
 		handleCollision:function(){
